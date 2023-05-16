@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de CSS</title>
+    <style>
+        body {
+  background-color: #d19076;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+p {
+    margin-left: 30px;
+    position: relative;
+}
+ul {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 40px;
+  padding-left: 50px;
+  position: relative;
+}
+
+li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100px;
+}
+
+li:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333333;
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  transform: translateX(-50%);
+}
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1> Pagina de ejempplos de CSS</h1>
+    <p>Este es un ejemplo de cómo se pueden usar los comandos en CSS para dar estilo a una página web.</p>
+    <ul>
+      <li>Un comando para cambiar el color de fondo de una página:</li>
+      <p>body {
+        background-color: #f0f0f0;
+      }</p>
+      <li>Un comando para cambiar el color de texto:</li>
+      <p>body {
+        color: #333;
+      }</p>
+      <li>Un comando para cambiar el tamaño de fuente:</li>
+      <p>body {
+        font-size: 16px;
+      }
+      </p>
+      <li>Un comando para cambiar el tipo de fuente:</li>
+      <p>body {
+        font-family: Arial, sans-serif;
+      }</p>
+      <li>Un comando para cambiar el margen:</li>
+      <p>body {
+        margin: 20px;
+      }</p>
+      <p>o</p>
+      <p>body {
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+      }</p>
+      <li>Un comando para cambiar el borde:</li>
+      <p>body {
+        border: 1px solid #333;
+      }
+      </p>
+      <p>o</p>
+      <p>body {
+        border-top: 2px dashed red;
+        border-right: 1px solid #333;
+        border-bottom: 3px dotted blue;
+        border-left: 1px double green;
+      }
+      </p>
+      <li>Un comando para cambiar el espacio entre líneas:</li>
+      <p>body {
+        line-height: 1.5;
+      }</p>
+      <p>o</p>
+      <p>body {
+        line-height: 1.2em;
+      }</p>
+    </ul>
+  </body>
+</html>
